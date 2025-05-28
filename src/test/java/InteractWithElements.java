@@ -99,7 +99,7 @@ public class InteractWithElements {
         //thread.sleep(6000);
         //2click en el boton confirm
         buttonAlert.click();
-        //thread.sleep(6000);
+        //git status
         //3 aceptar alerta
         driver.switchTo().alert().accept();
         //4 volver a ahcer clcik en el confirm
