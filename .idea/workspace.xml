@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df4fb6d1-f1ff-43e8-a9af-7a8c9e425e4f" name="Changes" comment="" />
+    <list default="true" id="df4fb6d1-f1ff-43e8-a9af-7a8c9e425e4f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/AnotationTestNG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ejerciciosSelenium/FindElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejerciciosSelenium/FindElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ejerciciosSelenium/LoginUsingTestNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ejerciciosSelenium/LoginUsingTestNG.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,6 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.EjercicioLocalizacionDeElementos.executor": "Run",
+    "Application.FindElements.executor": "Run",
     "Application.InteractWithElements.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -58,9 +64,9 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.LoginUsingTestNG">
-    <configuration name="EjercicioLocalizacionDeElementos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ejerciciosSelenium.EjercicioLocalizacionDeElementos" />
+  <component name="RunManager" selected="Application.FindElements">
+    <configuration name="FindElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ejerciciosSelenium.FindElements" />
       <module name="SeleniumBasics" />
       <extension name="coverage">
         <pattern>
@@ -134,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FindElements" />
         <item itemvalue="TestNG.LoginUsingTestNG" />
         <item itemvalue="TestNG.LoginUsingTestNG.loginWithInvalidCredentials" />
         <item itemvalue="TestNG.LoginUsingTestNG.logingWithValidCredentials" />
         <item itemvalue="Application.InteractWithElements" />
-        <item itemvalue="Application.EjercicioLocalizacionDeElementos" />
       </list>
     </recent_temporary>
   </component>

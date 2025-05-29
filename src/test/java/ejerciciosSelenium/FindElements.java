@@ -9,36 +9,24 @@ import java.util.List;
 
 public class FindElements {
     public static void main(String[] args) {
-        // Instancio el WebDriver
-        System.setProperty("webdriver.chrome.driver", "ruta/al/chromedriver");
         WebDriver driver = new ChromeDriver();
-
-        // Get y agreggro la URL
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         driver.manage().window().maximize();
+        // Encuentro todos los radio buttons y hago clic uno por uno
+        List<WebElement> radios = driver.findElements(By.xpath("//input[@type='radio']"));
+        for (WebElement radio : radios) {
+            radio.click(); // hace clic
 
-        // Selecciono todos los radio buttons a traves de una lista
-        List<WebElement> radioButtons = driver.findElements(By.cssSelector("input[type='radio']"));
-        for (WebElement radio : radioButtons) {
-            if (!radio.isSelected()) {
-                radio.click();
-            }
-            // Aqui utilice el Sleep para alentar la prueba, batalle un poco con el nuevo metodo
-            //que nos enseño Patricia, por eso deje aun el sleep
-            try { Thread.sleep(500); } catch (InterruptedException e) { e.printStackTrace(); }
         }
 
-        // Selecciono todos los check boxes
-        List<WebElement> checkBoxes = driver.findElements(By.cssSelector("input[type='checkbox']"));
-        for (WebElement checkbox : checkBoxes) {
-            if (!checkbox.isSelected()) {
-                checkbox.click();
-            }
-            try { Thread.sleep(500); } catch (InterruptedException e) { e.printStackTrace(); }
+        //  Encuentro todos los checkboxes y hago clic uno por uno
+        List<WebElement> checks = driver.findElements(By.xpath("//input[@type='checkbox']"));
+        for (WebElement check : checks) {
+            check.click(); // hace clic
+
         }
 
-        // Cierra el navegador
+        // Cierro el navegador
         driver.quit();
     }
 }
-

@@ -54,7 +54,7 @@ public class LoginUsingTestNG {
         //Password
         WebElement passwordTxtbox = driver.findElement(By.name("inputPassword"));
         //sing button
-        WebElement sumitButton2 = driver.(By.xpath("//button[@type='submit']"));
+        //WebElement sumitButton2 = driver.(By.xpath("//button[@type='submit']"));
 
         //ingresar usuariofindElement
 
@@ -62,7 +62,7 @@ public class LoginUsingTestNG {
         //ingresar contraseñ
         passwordTxtbox.sendKeys("contraseñaincorrecta");
         //click summit
-       sumitButton2.click();
+      // sumitButton2.click();
 
         Thread.sleep(3000);
 
